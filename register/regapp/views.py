@@ -46,3 +46,6 @@ def LoginPage(request):
 def LogoutPage(request):
     logout(request)
     return redirect('login')
+
+def Nav(request):
+    return render(request,'nav.html')    

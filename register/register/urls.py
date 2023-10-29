@@ -20,8 +20,9 @@ from regapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',SignupPage,name='signup'),
+    path('signup/',SignupPage,name='signup'),
     path('login/',LoginPage,name='login'),
     path('home/',HomePage,name='home'),
     path('logout/',LogoutPage,name='logout'),
+      path('',Nav,name='nav'),
 ]
